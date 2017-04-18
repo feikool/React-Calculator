@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="./react.js"></script>
+    <script src="./react-dom.js"></script>
+    <script src="./browser.min.js"></script>
+    <script type="text/babel" src="./calculator.jsx"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+    }
+    #app{
+        width: 100%;
+        height: 100%;
+    }
+    .cal{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .screen{
+        flex: 1;
+        background: #172830;
+        color:#4EA5E3 ;
+        font-size: 42px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding:0 12px 12px 0;
+    }
+    .operator{
+        flex: 2;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: #4F6E83;
+    }
+    .item{
+        border-top: 1px solid #DCDCDC;
+        border-right: 1px solid #DCDCDC;
+        width: 25%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .item:nth-of-type(4n),.item:nth-of-type(-n+4){
+        background: #40A0EA;
+        color:#fff;
+        font-size: 20px;
+    }
+</style>
+<body>
+<div id="app"></div>
+</body>
+</html>
